@@ -44,17 +44,12 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <meta charSet="utf-8" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
-            rel="stylesheet"
-          />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+          <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
           <link rel="icon" type="image/x-icon" href="/favicon.png" />
           <meta name="theme-color" content="#673AB6" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={'true'} />
-          <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;700;900&display=swap" rel="stylesheet"/>
         </Head>
         <body>
           <Main />
