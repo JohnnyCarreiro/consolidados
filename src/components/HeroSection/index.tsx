@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { ArrowForward, ArrowRight, HeroBg, HeroBtnWrapper, HeroContainer, HeroContent, HeroH1, HeroP, VideoBg } from './styles'
 import { Button } from '@/components/Button/ButtonElements'
-import Video from '@/assets/Solar-Energy.mp4'
+import Video from '@/assets/hero_video.webm'
 
 interface HeroSectionProps {
   children?: ReactNode
