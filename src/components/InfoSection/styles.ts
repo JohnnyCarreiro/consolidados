@@ -58,9 +58,9 @@ export const TextWrapper = styled.div`
   padding-bottom: 60px;
 `
 export const TopLine = styled.p`
-  color: #01be71;
+  color: ${({theme}) => theme.colors.primary};
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
@@ -82,6 +82,7 @@ export const Subtitle = styled.h3<SubtitleProps>`
   margin-bottom: 35px;
   font-size: 1.125rem;
   line-height: 1.5rem;
+  margin-top: 1rem;
   color: ${({darkText = false}) => (darkText ? '#010606' : '#fff')};
 `
 export const BtnWrapper = styled.div`

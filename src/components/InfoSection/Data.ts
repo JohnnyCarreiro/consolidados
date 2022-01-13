@@ -27,19 +27,19 @@ export const homeObjTwo = {
   lightText: false,
   lightTextDesc: false,
   //texts
-  topLine: 'Mussum Ipsum, cacilds vidis litro abertis',
+  topLine: 'Adapte a tecnologias, serviços e redes sociais ao seu negócio, nunca dependa deles',
   headLine:
-    'Mussum Ipsum, cacilds vidis litro abertis.',
+    'Você é senhor(a) na sua própria casa? ',
   description:
     'Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.',
   buttonLabel: 'Saiba Mais',
   imgStart: true,
   //image
-  img: require('../../assets/images/svg-1.svg').default,
+  img: require('../../assets/images/rule.svg').default,
   alt: 'Car',
   //button
   dark: false,
-  primary: false,
+  primary: true,
   darkText: true
 }
 export const homeObjThree = {

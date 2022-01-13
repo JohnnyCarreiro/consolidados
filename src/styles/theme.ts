@@ -1,6 +1,6 @@
 const defaultTheme = {
   colors:{
-      gray_100: '#00000F',
+      gray_100: '#010606',
       gray_200: '#121820',
       gray_300: '#253040',
       gray_400: '#374860',

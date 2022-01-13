@@ -31,14 +31,20 @@ function HeroSection({ children }: HeroSectionProps) {
       <HeroContent>
         <HeroH1>Sua empresa faz negócios on-line?</HeroH1>
         <HeroP>
-          Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+          Hoje o mínimo que sua empresa precisa é de uma presença digital, mas cuido para não construir o seu império na casa dos outros.
         </HeroP>
         <HeroBtnWrapper>
-          <Link href='signup' passHref >
-            <Button to='about' onMouseEnter={onHover} onMouseLeave={onHover} >
-              De volta ao negócios {hover ? <ArrowForward/> : <ArrowRight/>}
-            </Button>
-          </Link>
+          <Button
+            to='about'
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-80}
+          >
+            De volta ao negócios {hover ? <ArrowForward/> : <ArrowRight/>}
+          </Button>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
