@@ -1,11 +1,9 @@
 import { useState } from 'react'
-import Navbar from '@/components/Navbar'
-import { Sidebar } from '@/components/Sidebar'
 import Head from 'next/head'
 import { Container } from '../styles/Home'
-import HeroSection from '@/components/HeroSection'
+import {HeroSection} from '@/components/HeroSection'
 import { InfoSection } from '@/components/InfoSection'
-import { homeObjOne, homeObjTwo, homeObjThree } from '@/components/InfoSection/Data'
+import { heroSection, homeObjOne, homeObjTwo, homeObjThree } from '@/assets/Data'
 import { Services } from '@/components/Services'
 
 export default function Home() {
@@ -20,7 +18,7 @@ export default function Home() {
       <Head>
         <title>Template Next Tipescript</title>
       </Head>
-      <HeroSection />
+      <HeroSection {...heroSection}/>
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />

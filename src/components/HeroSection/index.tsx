@@ -1,4 +1,4 @@
-import { ReactNode, useCallback, useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import Link from 'next/link'
 
 import { ArrowForward, ArrowRight, HeroBg, HeroBtnWrapper, HeroContainer, HeroContent, HeroH1, HeroP, VideoBg } from './styles'
@@ -6,11 +6,16 @@ import { Button } from '@/components/Button/ButtonElements'
 import Video from '@/assets/hero_video.webm'
 
 interface HeroSectionProps {
-  children?: ReactNode
+  heading: string,
+  description: string,
+  cta: string,
+  scrollToId: string
 }
 
-function HeroSection({ children }: HeroSectionProps) {
+export const HeroSection:React.FC<HeroSectionProps> = (heroSection) => {
   const [hover, setHover] = useState(false)
+
+  const { heading, description, cta, scrollToId } = heroSection
 
   const onHover = useCallback(() => {
     setHover(!hover)
@@ -29,13 +34,13 @@ function HeroSection({ children }: HeroSectionProps) {
         />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Sua empresa faz negócios on-line?</HeroH1>
+        <HeroH1>{heading}</HeroH1>
         <HeroP>
-          Hoje o mínimo que sua empresa precisa é de uma presença digital, mas cuido para não construir o seu império na casa dos outros.
+          {description}
         </HeroP>
         <HeroBtnWrapper>
           <Button
-            to='about'
+            to={scrollToId}
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             smooth={true}
@@ -43,12 +48,10 @@ function HeroSection({ children }: HeroSectionProps) {
             spy={true}
             offset={-80}
           >
-            De volta ao negócios {hover ? <ArrowForward/> : <ArrowRight/>}
+            {cta} {hover ? <ArrowForward/> : <ArrowRight/>}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
   )
 }
-
-export default HeroSection

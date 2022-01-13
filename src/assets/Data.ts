@@ -1,3 +1,10 @@
+export const heroSection = {
+  heading: 'Sua empresa está pronta para o presente?',
+  description:
+    'Faça parte da nova realidade do mundo, detenha sua própria tecnologia e presença digital!',
+  cta: 'Saiba Mais',
+  scrollToId: 'services'
+}
 export const homeObjOne = {
   //color Scheme
   id: 'about',
@@ -13,7 +20,7 @@ export const homeObjOne = {
   buttonLabel: 'Saiba Mais',
   imgStart: false,
   //image
-  img: require('../../assets/images/svg-1.svg').default,
+  img: require('../assets/images/svg-1.svg').default,
   alt: 'Car',
   //button
   dark: false,
@@ -35,7 +42,7 @@ export const homeObjTwo = {
   buttonLabel: 'Saiba Mais',
   imgStart: true,
   //image
-  img: require('../../assets/images/rule.svg').default,
+  img: require('../assets/images/rule.svg').default,
   alt: 'Car',
   //button
   dark: false,
@@ -57,7 +64,7 @@ export const homeObjThree = {
   buttonLabel: 'Saiba Mais',
   imgStart: false,
   //image
-  img: require('../../assets/images/svg-1.svg').default,
+  img: require('../assets/images/svg-1.svg').default,
   alt: 'Car',
   //button
   dark: false,
