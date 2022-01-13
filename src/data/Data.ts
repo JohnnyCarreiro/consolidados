@@ -1,9 +1,16 @@
+export const navLinks = [
+  {name: 'Sobre',id: 'about'},
+  {name: 'Descubra',id: 'discover'},
+  {name: 'Serviços',id: 'services'},
+  {name: 'Projetos',id: 'projects'},
+  {name: 'Contato',id: 'contact'},
+]
 export const heroSection = {
   heading: 'Sua empresa está pronta para o presente?',
   description:
     'Faça parte da nova realidade do mundo, detenha sua própria tecnologia e presença digital!',
-  cta: 'Saiba Mais',
-  scrollToId: 'services'
+  cta: 'Atualize-se',
+  scrollToId: 'discover'
 }
 export const homeObjOne = {
   //color Scheme
@@ -34,7 +41,7 @@ export const homeObjTwo = {
   lightText: false,
   lightTextDesc: false,
   //texts
-  topLine: 'Adapte a tecnologias, serviços e redes sociais ao seu negócio, nunca dependa deles',
+  topLine: 'Adapte as tecnologias, serviços e redes sociais ao seu negócio e nunca dependa deles',
   headLine:
     'Você é senhor(a) na sua própria casa? ',
   description:

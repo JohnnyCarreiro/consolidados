@@ -1,10 +1,10 @@
 import { ReactNode, useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { animateScroll as scroll } from 'react-scroll'
-
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
-import { navLinks } from './links'
+
+import { navLinks } from '@/data/Data'
 import { NavLink } from './NavLink'
 import { Nav, NavContainer, NavLogo, MobileIcon, NavMenu, NavBtn, NavBtnLink } from './styles'
 

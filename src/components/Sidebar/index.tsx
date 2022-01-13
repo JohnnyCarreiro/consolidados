@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import Link from 'next/link'
 
-import { navLinks } from '../Navbar/links'
+import { navLinks } from '@/data/Data'
 import { NavLink } from './NavLink'
 import { CloseIcon, Icon, SidebarBtnLink, SidebarBtnWrapper, SidebarContainer, SidebarItem, SidebarLink, SidebarMenu, SidebarWrapper } from './styles'
 
