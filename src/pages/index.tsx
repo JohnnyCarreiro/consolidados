@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { Container } from '../styles/Home'
 import {HeroSection} from '@/components/HeroSection'
 import { InfoSection } from '@/components/InfoSection'
-import { heroSection, homeObjOne, homeObjTwo, homeObjThree } from '@/data/Data'
+import { heroSection, aboutSection, homeObjTwo, homeObjThree } from '@/data/Data'
 import { Services } from '@/components/Services'
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
         <title>Template Next Tipescript</title>
       </Head>
       <HeroSection {...heroSection}/>
-      <InfoSection {...homeObjOne} />
+      <InfoSection {...aboutSection} />
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
       <Services />

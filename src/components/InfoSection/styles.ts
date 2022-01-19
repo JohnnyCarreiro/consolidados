@@ -15,7 +15,7 @@ type SubtitleProps = {
 
 export const InfoContainer = styled.div<ContainerProps>`
   color: #fff;
-  background: ${({lightBg = false}) => (lightBg ? '#f9f9f9' : '#010606')};
+  background: ${({lightBg = false}) => (lightBg ? '#f9f9f9' : ({theme}) => theme.colors.gray_200)};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -77,7 +77,7 @@ export const Heading = styled.h2<HeadingProps>`
     font-size: 2rem;
   }
 `
-export const Subtitle = styled.h3<SubtitleProps>`
+export const Subtitle = styled.p<SubtitleProps>`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 1.125rem;
