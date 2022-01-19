@@ -3,16 +3,10 @@ import Head from 'next/head'
 import { Container } from '../styles/Home'
 import {HeroSection} from '@/components/HeroSection'
 import { InfoSection } from '@/components/InfoSection'
-import { heroSection, aboutSection, homeObjTwo, homeObjThree } from '@/data/Data'
+import { heroSection, aboutSection, freedomSection, homeObjThree } from '@/data/Data'
 import { Services } from '@/components/Services'
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
-
   return (
     <Container>
       <Head>
@@ -20,7 +14,7 @@ export default function Home() {
       </Head>
       <HeroSection {...heroSection}/>
       <InfoSection {...aboutSection} />
-      <InfoSection {...homeObjTwo} />
+      <InfoSection {...freedomSection} />
       <InfoSection {...homeObjThree} />
       <Services />
     </Container>

@@ -2,11 +2,11 @@ export type InfoSectionProps = {
   id: string
   lightBg: boolean
   lightText: boolean
-  lightTextDesc: boolean
   topLine: string
   headLine: string
   description: string
   buttonLabel: string
+  scrollToId: string
   imgStart: boolean
   img: {
     height: number
