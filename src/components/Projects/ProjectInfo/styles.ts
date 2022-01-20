@@ -56,7 +56,7 @@ export const Heading = styled.h2<TextProps>`
     font-size: 2rem;
   }
 `
-export const Subtitle = styled.p<TextProps>`
+export const Subtitle = styled.div<TextProps>`
   max-width: 440px;
   margin-bottom: 35px;
   font: ${({theme}) => theme.texts.main_text};
