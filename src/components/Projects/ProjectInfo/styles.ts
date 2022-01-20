@@ -1,40 +1,20 @@
 import styled from 'styled-components'
 
-type ContainerProps = {
-  lightBg?: boolean;
-}
 type RowProps = {
   imgStart?: boolean;
 }
-type HeadingProps = {
+type TextProps = {
   lightText?: boolean;
 }
 type SubtitleProps = {
   darkText?: boolean;
 }
 
-export const InfoContainer = styled.div<ContainerProps>`
-  color: #fff;
-  background: ${({lightBg = false}) => (lightBg ? '#f9f9f9' : ({theme}) => theme.colors.gray_200)};
-
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
-`
-export const InfoWrapper = styled.div`
-  display: grid;
-  z-index: 1;
-  height: 860px;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 24px;
-  justify-content:center;
-`
 export const InfoRow = styled.div<RowProps>`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
-  align-items: center;
+  height: 100%;
+  align-items: start;
   grid-template-areas: ${({imgStart = false}) => (imgStart ? `'col2 col1'` : `'col1 col2'` )};
   /* grid-template-areas: ${({imgStart = false}) => (imgStart ? `'col2 col1 col1'` : `'col1 col1 col2'` )}; */
 
@@ -66,24 +46,23 @@ export const TopLine = styled.p`
   text-transform: uppercase;
   margin-bottom: 16px;
 `
-export const Heading = styled.h2<HeadingProps>`
+export const Heading = styled.h2<TextProps>`
   margin-top: 24px;
-  font-size: 3rem;
+  font: ${({theme}) => theme.texts.title};
   line-height: 1.1;
-  font-weight: 600;
   color: ${({lightText = false}) => (lightText ? '#f7f8fa' : '#010606')};
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
 `
-export const Subtitle = styled.p<SubtitleProps>`
+export const Subtitle = styled.p<TextProps>`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 1.125rem;
+  font: ${({theme}) => theme.texts.main_text};
   line-height: 1.5rem;
   margin-top: 1rem;
-  color: ${({darkText = false}) => (darkText ? '#010606' : '#fff')};
+  color: ${({lightText = false}) => (lightText ? '#f7f8fa' : '#010606')};
 `
 export const BtnWrapper = styled.div`
   display: flex;

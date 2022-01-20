@@ -5,7 +5,7 @@ type NavProps = {
   scrollNav: boolean
 }
 export const Nav = styled.nav<NavProps>`
-  background: ${({scrollNav = false}) => (scrollNav ? '#000' : 'transparent')};
+  background: ${({scrollNav = false}) => (scrollNav ? ({theme}) => theme.colors.secondary : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -81,7 +81,7 @@ export const NavLink = styled(LinkS) `
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 4px solid ${({theme}) => theme.colors.primary};
   }
 `
 export const NavBtn = styled.nav`
@@ -94,7 +94,7 @@ export const NavBtn = styled.nav`
 `
 export const NavBtnLink = styled.a`
   border-radius: 50px;
-  background: #01bf71;
+  background: ${({theme}) => theme.colors.primary};
   white-space: nowrap;
   padding: 10px 22px;
   color: #010606;

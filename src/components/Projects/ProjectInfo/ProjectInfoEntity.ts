@@ -1,6 +1,4 @@
-export type InfoSectionProps = {
-  id: string
-  lightBg: boolean
+export type ProjectInfoProps = {
   lightText: boolean
   topLine: string
   headLine: string
@@ -16,5 +14,4 @@ export type InfoSectionProps = {
   alt: string
   dark: boolean
   primary: boolean
-  darkText: boolean
 }

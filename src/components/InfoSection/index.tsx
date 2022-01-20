@@ -9,11 +9,11 @@ export const InfoSection:React.FC<InfoSectionProps> = (infoSectionProps) => {
     id,
     lightBg,
     lightText,
-    lightTextDesc,
     topLine,
     headLine,
     description,
     buttonLabel,
+    scrollToId,
     imgStart,
     img,
     alt,
@@ -34,7 +34,7 @@ export const InfoSection:React.FC<InfoSectionProps> = (infoSectionProps) => {
                 <Button
                   primary={primary}
                   dark={dark}
-                  to='home'
+                  to={scrollToId}
                   smooth={true}
                   duration={500}
                   spy={true}
